@@ -126,7 +126,7 @@ clone()
      fi
 
      msg "Clone AnyKernel3 source"
-     git clone --depth=1 https://github.com/Neebe3289/AnyKernel3 -b begonia AnyKernel3
+     git clone --depth=1 https://github.com/ChuckProjekt/AnyKernel3
 
      msg "Clone telegram.sh source"
      git clone --depth=1 https://github.com/fabianonline/telegram.sh telegram
@@ -296,5 +296,5 @@ BUILD_END=$(date +"%s")
 DIFF=$((BUILD_END - BUILD_START))
 make_zip
 send_zip
-
+rm -rf AnyKernel3
 
